@@ -1,6 +1,11 @@
 # cryo
 A Chromium-derived browser tweaked and tested for stable streaming performance.
 
+## Downloads
+
+Please find the downloads in the release section:
+[https://github.com/steveseguin/cryo/releases](https://github.com/steveseguin/cryo/releases)
+
 ## Using the App from Source
 
 You'll need to download and extract the source code; or git clone it.
