@@ -20,8 +20,6 @@ npm install
 npm run build
 ```
 
-* For Mac, please also see this issue for building: https://github.com/electron-userland/electron-builder/issues/3828
-
 And for notorization on macOS,..
 ```
 npm install
