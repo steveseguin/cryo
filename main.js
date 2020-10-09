@@ -81,7 +81,7 @@ function createWindow(URL=url) {
 	const mainWindow = new BrowserWindow({
 		width: width / factor,
 		height: height / factor,
-		frame: false,
+		frame: true,
 		backgroundColor: '#141926',
 		fullscreenable: true,
 		titleBarStyle: 'customButtonsOnHover',
