@@ -7,6 +7,9 @@ process.on('uncaughtException', function (error) {
 });
 
 const {app, BrowserWindow, ipcMain, screen, shell} = require('electron')
+
+app.commandLine.appendSwitch('disable-renderer-backgrounding')
+
 const path = require('path')
 const contextMenu = require('electron-context-menu');
 var { argv } = require("yargs")
@@ -46,9 +49,9 @@ var { argv } = require("yargs")
     type: "boolean"
   })
   .describe("help", "Show help.") // Override --help usage message.
-  .default("h", 720)
-  .default("w", 1280)
-  .default("u", "https://s10.watch/home")
+  .default("h", 960)
+  .default("w", 1647)
+  .default("u", "https://s10.fun/cryo/")
   .default("t", null)
   .default("p", process.platform == 'darwin')
   
@@ -61,10 +64,10 @@ var counter=0;
 
 function createWindow(URL=url) {
  
-	let currentTitle = "S10Cap";
+	let currentTitle = "Cryo";
 	if (title==null){
 		counter+=1;
-		currentTitle = "S10Cap "+(counter.toString());
+		currentTitle = "Cryo "+(counter.toString());
 	} else if (counter==0){
 		counter+=1;
 		currentTitle = title;
@@ -140,11 +143,11 @@ app.on('window-all-closed', () => {
 contextMenu({
 		prepend: (defaultActions, params, browserWindow) => [
 			{
-				label: 'Go to Homepage',
+				label: 'Go to Studio',
 				// Only show it when right-clicking text
 				visible: true,
 				click: () => {				
-					browserWindow.loadURL(`https://s10.watch/home`);
+					browserWindow.loadURL(`https://s10.fun/cryo/`);
 				}
 			},
 			{
@@ -160,7 +163,7 @@ contextMenu({
 				// Only show it when right-clicking text
 				visible: true,
 				click: () => {
-					createWindow(`https://s10.watch/home`);
+					createWindow(`https://s10.fun/cryo/`);
 				}
 			},
 			{
