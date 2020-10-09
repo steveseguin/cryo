@@ -1,7 +1,7 @@
 # cryo
 A Chromium-derived browser tweaked and tested for stable streaming performance.
 
-## Building the App from Source
+## Using the App from Source
 
 You'll need to download and extract the source code; or git clone it.
 You'll also need npm installed.
