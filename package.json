@@ -11,7 +11,8 @@
     "build:darwin": "electron-builder --mac",
     "build:linux": "electron-builder --linux",
     "clean": "rimraf ./dist",
-    "release": "electron-builder --publish always"
+    "release": "electron-builder --publish always",
+    "test": "node --test tests/url-startup.test.cjs"
   },
   "build": {
     "appId": "Cryo",

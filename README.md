@@ -33,3 +33,9 @@ export appleIdPassword={app-specific-password-here}
 sudo -E npm run build
 
 ```
+
+## Tests
+
+With Node.js 18 or newer, run `npm test`. These dependency-free tests exercise
+the startup URL handling with Electron and argument parsing stubbed. They do
+not launch Electron, contact a website, or validate native window behavior.
