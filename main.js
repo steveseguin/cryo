@@ -55,7 +55,8 @@ var { argv } = require("yargs")
   .default("t", null)
   .default("p", process.platform == 'darwin')
   
-const { width, height, url, title, pin } = argv;
+const { width, height, title, pin } = argv;
+let { url } = argv;
 
 if (!(url.startsWith("http"))){
 	url = "https://"+url;
